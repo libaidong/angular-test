@@ -1,0 +1,20 @@
+<html>
+<head>
+<title>lesson one</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link href="css/lesson.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/angular/angular.min.js"></script>
+<script type="text/javascript" src="js/lesson.js"></script>
+</head>
+<body ng-app = "drag">
+	<span draggable>Drag ME</span>
+	<div ng-controller="GreetCtrl">
+		Hello{{name}}!
+	</div>
+	<div ng-controller="ListCtrl">
+		<ol>
+			<li ng-repeat="name in names">{{name}}</li>
+		</ol>
+	</div>
+</body>
+</html>
